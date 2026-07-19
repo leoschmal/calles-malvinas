@@ -4,6 +4,14 @@
    Paleta: tinta de carta (navy), papel pergamino, lacre, latón.
    ============================================================ */
 
+@font-face{
+  font-family: 'Malvinas Sans';
+  src: url('../fonts/MalvinasSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root{
   --ink-navy: #12263A;
   --ink-navy-deep: #0A1721;
@@ -271,6 +279,61 @@ section{ padding: 84px 0; }
 
 @media (max-width: 860px){
   .fundamentacion__grid{ grid-template-columns: 1fr; gap: 36px; }
+}
+
+/* ---------- Cartel manuscrito bajo el hero (alusión a la bandera del Mundial) ---------- */
+.flag-callout{
+  background: var(--parchment);
+  padding: 40px 0 44px;
+  text-align: center;
+}
+.flag-callout__banner{
+  display: inline-block;
+  position: relative;
+  background: #F8F5EC;
+  padding: 34px 56px 30px;
+  border-radius: 3px;
+  transform: rotate(-1.3deg);
+  box-shadow: var(--shadow-card);
+}
+.flag-callout__banner::after{
+  content: "";
+  position: absolute;
+  left: 8%; right: 8%; top: 50%;
+  height: 1px;
+  background: rgba(28,27,22,0.08);
+  transform: translateY(-50%) rotate(0.4deg);
+}
+.flag-callout__text{
+  display: block;
+  font-family: 'Malvinas Sans', var(--font-display), cursive;
+  font-size: clamp(1.3rem, 3.4vw, 2.1rem);
+  line-height: 1.28;
+  color: #16140f;
+  letter-spacing: 0.5px;
+}
+/* ---------- Sello sobre la cita destacada (alusión a la bandera del Mundial) ---------- */
+.pull-wrap{ position: relative; padding-bottom: 34px; }
+.flag-stamp{
+  position: absolute;
+  bottom: -12px;
+  right: 6%;
+  transform: rotate(-8deg);
+  font-family: 'Malvinas Sans', var(--font-display), cursive;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--wax-red);
+  border: 2px solid var(--wax-red);
+  border-radius: 8px;
+  padding: 6px 14px;
+  opacity: 0.82;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  white-space: nowrap;
+}
+@media (max-width: 860px){
+  .flag-stamp{ position: static; display: inline-block; transform: rotate(-4deg); margin-top: 14px; }
 }
 
 /* ---------- Plano interactivo ---------- */

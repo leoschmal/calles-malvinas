@@ -40,7 +40,7 @@ Título de la sección:
 No son nombres cualquiera
 
 Texto debajo del título:
-Cada nombre propuesto corresponde a un lugar real del archipiélago: una bahía, un puerto, un monte. No se inventó ninguno.
+Cada nombre propuesto corresponde a un lugar real de las islas: una bahía, un puerto, un monte. La Geografía y lugares delas Malvinas, presentes en el barrio.
 
 Cita destacada:
 "Las Islas Malvinas son parte integrante e indivisible del territorio nacional argentino. Dar a las calles del barrio los nombres de lugares reales de las islas es una forma concreta de mantener viva su presencia en el espacio público."
@@ -67,7 +67,7 @@ Título de la sección:
 El plano real del barrio
 
 Texto debajo del título:
-Para ordenar el trazado, el proyecto agrupó las calles por tipo: las que van de norte a sur llevan nombres de bahías; las que van de este a oeste, nombres de puertos. Es solo un criterio para organizar el plano del barrio — las islas en sí no siguen ningún patrón así.
+Para ordenar el trazado, el proyecto agrupó las calles por tipo: las que van de norte a sur llevan nombres de bahías; las que van de este a oeste, nombres de puertos. Es solo un criterio para organizar el plano del barrio.
 
 Pregunta del buscador de calles:
 Hoy tu calle solo tiene número. ¿Cuál es la tuya?
@@ -76,7 +76,7 @@ Hoy tu calle solo tiene número. ¿Cuál es la tuya?
 NO EDITAR: [GENERAL: alternativas-intro]
 ------------------------------------------------------------------------
 Título de la sección:
-Diez lugares más de la toponimia malvinense
+Diez lugares más de la geografía malvinense
 
 Texto debajo del título:
 Estos nombres todavía no están asignados a ninguna calle. Quedan disponibles como alternativas, por si hiciera falta ajustar alguna denominación de la lista principal.
@@ -109,7 +109,7 @@ Fuente: Propuesta de Nomenclatura de Calles — Toponimia de las Islas Malvinas,
 NO EDITAR: [GENERAL: footer]
 ------------------------------------------------------------------------
 Texto del pie de página:
-Sitio vecinal no oficial, elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. Fotografías con licencia libre vía Wikimedia Commons — crédito de autor y licencia detallado en cada ficha. Contorno de las islas adaptado de "Falkland Islands location map" por NordNordWest (Wikimedia Commons, CC BY-SA 3.0), sin nombres en inglés agregados por nosotros. Mapa del barrio: plano propio del proyecto. Ubicaciones esquemáticas, no a escala.
+Elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. 
 
 
 ========================================================================
@@ -125,7 +125,7 @@ Tipo: Promontorio
 Ubicación: Noroeste de la Isla Soledad, entrada de la Bahía San Carlos
 Dato destacado: Posición argentina que resistió el desembarco británico en 1982
 Reseña:
-Accidente geográfico ubicado en la entrada de la Bahía San Carlos. Tuvo relevancia durante la guerra de 1982 por ser una posición argentina que resistió el desembarco británico en San Carlos. Su nombre recuerda al general Martín Miguel de Güemes, héroe de la Independencia argentina, incorporando al nomenclador una referencia geográfica de Malvinas con fuerte valor histórico y patriótico.
+Accidente geográfico ubicado en la entrada de la Bahía San Carlos. Su nombre recuerda al general Martín Miguel de Güemes, héroe de la Independencia argentina, incorporando al nomenclador una referencia geográfica de Malvinas con fuerte valor histórico y patriótico. Tuvo relevancia durante la guerra de 1982 por ser una posición argentina que resistió el desembarco británico en San Carlos. 
 
 ------------------------------------------------------------------------
 NO EDITAR: [CALLE: puerto-rivero]
