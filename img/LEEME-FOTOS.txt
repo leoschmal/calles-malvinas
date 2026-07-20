@@ -17,15 +17,3 @@ N.1855  Bahía de la Anunciación      -> img/calles/bahia-de-la-anunciacion.jpg
 N.1857  Bahía Ruiz Puente            -> img/calles/bahia-ruiz-puente.jpg
 N.1859  Bahía San Carlos             -> img/calles/bahia-san-carlos.jpg
 N.1861  Bahía Agradable              -> img/calles/bahia-agradable.jpg
-
-=== img/alternativas/ (10 nombres de reserva) ===
-Pradera del Ganso              -> img/alternativas/pradera-del-ganso.jpg
-Monte Tumbledown               -> img/alternativas/monte-tumbledown.jpg
-Monte Harriet / Enriqueta      -> img/alternativas/monte-harriet.jpg
-Monte Kent                     -> img/alternativas/monte-kent.jpg
-Cerro Zapador                  -> img/alternativas/cerro-zapador.jpg
-Cerro Alberdi                  -> img/alternativas/cerro-alberdi.jpg
-Cerro Vernet                   -> img/alternativas/cerro-vernet.jpg
-Islas de los Leones Marinos    -> img/alternativas/islas-de-los-leones-marinos.jpg
-Monte Longdon                  -> img/alternativas/monte-longdon.jpg
-Monte María                    -> img/alternativas/monte-maria.jpg

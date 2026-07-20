@@ -9,9 +9,7 @@
   // Contorno real (ver islands-map-data.js). Rótulos y puntos son nuestros,
   // agregados sobre esa base.
   function allPoints() {
-    const pts = STREETS.map((s) => ({ nombre: s.propuesta, mapa: s.mapa }));
-    ALTERNATIVAS.forEach((a) => pts.push({ nombre: a.propuesta, mapa: a.mapa }));
-    return pts;
+    return STREETS.map((s) => ({ nombre: s.propuesta, mapa: s.mapa }));
   }
 
   function renderIslandsMap(highlightMapa, highlightLabel) {
@@ -143,22 +141,6 @@
     });
   }
 
-  function renderAltGrid() {
-    const mount = document.getElementById("altGrid");
-    if (!mount) return;
-    mount.innerHTML = ALTERNATIVAS.map(
-      (a, i) => `
-      <button class="alt-card" data-idx="${i}">
-        <div class="alt-card__name">${a.propuesta}</div>
-        <span class="alt-card__tipo">${a.tipo}</span>
-        <p class="alt-card__resumen">${a.ubicacion}</p>
-      </button>`
-    ).join("");
-    mount.querySelectorAll(".alt-card").forEach((el) => {
-      el.addEventListener("click", () => openDetail(ALTERNATIVAS[Number(el.getAttribute("data-idx"))], false));
-    });
-  }
-
   /* ---------------- Buscador rápido por número actual ---------------- */
   function renderNumberChips() {
     const mount = document.getElementById("numberChips");
@@ -172,10 +154,10 @@
   /* ---------------- Panel de detalle ---------------- */
   function openDetailByNumero(numero) {
     const street = STREETS.find((s) => s.numero === numero);
-    if (street) openDetail(street, true);
+    if (street) openDetail(street);
   }
 
-  function openDetail(item, isAssigned) {
+  function openDetail(item) {
     const panel = document.getElementById("detailPanel");
     const overlay = document.getElementById("detailOverlay");
     if (!panel || !overlay) return;
@@ -187,7 +169,7 @@
 
     panel.querySelector(".detail-panel__inner").innerHTML = `
       <button class="detail-close" id="detailCloseBtn" aria-label="Cerrar">&times;</button>
-      <div class="eyebrow detail-panel__eyebrow">${isAssigned ? "CALLE N.° " + item.numero : "PROPUESTA ALTERNATIVA"}</div>
+      <div class="eyebrow detail-panel__eyebrow">CALLE N.° ${item.numero}</div>
       <h3 class="detail-panel__title">${item.propuesta}</h3>
       <div class="detail-panel__meta">
         <span class="tag">${item.tipo}</span>
@@ -201,11 +183,11 @@
       <div class="detail-map">${renderIslandsMap(item.mapa, item.propuesta)}</div>
     `;
 
-    // Si existe una foto propia en img/calles|alternativas/<slug>.<ext> se usa esa
+    // Si existe una foto propia en img/calles/<slug>.<ext> se usa esa
     // (probando varias extensiones); si no, se cae a la foto de Wikimedia (con crédito visible).
     const imgEl = document.getElementById("detailImg");
     const creditEl = document.getElementById("detailCredit");
-    const localBase = `img/${isAssigned ? "calles" : "alternativas"}/${item.slug}`;
+    const localBase = `img/calles/${item.slug}`;
     const localExts = ["jpg", "jpeg", "png", "webp"];
     creditEl.style.display = "none";
     let extIndex = 0;
@@ -229,10 +211,10 @@
     document.body.style.overflow = "hidden";
 
     document.querySelectorAll(".plano-hotspot").forEach((el) => {
-      el.classList.toggle("is-active", isAssigned && el.getAttribute("data-numero") === item.numero);
+      el.classList.toggle("is-active", el.getAttribute("data-numero") === item.numero);
     });
     document.querySelectorAll(".chip").forEach((el) => {
-      el.classList.toggle("is-active", isAssigned && el.getAttribute("data-numero") === item.numero);
+      el.classList.toggle("is-active", el.getAttribute("data-numero") === item.numero);
     });
   }
 
@@ -250,7 +232,6 @@
     renderCompanionMap();
     renderNeighborhoodPlan();
     renderStreetGrid();
-    renderAltGrid();
     renderNumberChips();
 
     document.getElementById("detailOverlay").addEventListener("click", closeDetail);

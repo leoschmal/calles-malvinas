@@ -73,15 +73,6 @@ Pregunta del buscador de calles:
 Hoy tu calle solo tiene número. ¿Cuál es la tuya?
 
 ------------------------------------------------------------------------
-NO EDITAR: [GENERAL: alternativas-intro]
-------------------------------------------------------------------------
-Título de la sección:
-Diez lugares más de la geografía malvinense
-
-Texto debajo del título:
-Estos nombres todavía no están asignados a ninguna calle. Quedan disponibles como alternativas, por si hiciera falta ajustar alguna denominación de la lista principal.
-
-------------------------------------------------------------------------
 NO EDITAR: [GENERAL: participar]
 ------------------------------------------------------------------------
 Título de la sección:
@@ -96,7 +87,7 @@ Trece calles sin nombre del barrio, cada una con su denominación propuesta, tip
 
 Paso 2 — título: Ajustes finales por la Comisión Vecinal
 Paso 2 — texto:
-La asignación definitiva de cada nombre a cada calle queda a criterio de la Comisión Vecinal del barrio, que puede recurrir a los nombres alternativos si es necesario.
+La asignación definitiva de cada nombre a cada calle queda a criterio de la Comisión Vecinal del barrio.
 
 Paso 3 — título: Compartilo con tus vecinos
 Paso 3 — texto:
@@ -258,98 +249,3 @@ Ubicación: Costa sudeste de la Isla Soledad
 Dato destacado: Su entorno sufrió los ataques aéreos del 8 de junio de 1982
 Reseña:
 Bahía de la costa sudeste de la Isla Soledad. Su entorno fue escenario de los ataques aéreos del 8 de junio de 1982.
-
-
-========================================================================
-PARTE 3 — LOS 10 NOMBRES DE RESERVA (todavía sin calle asignada)
-========================================================================
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: pradera-del-ganso]
-------------------------------------------------------------------------
-Nombre propuesto: Pradera del Ganso
-Tipo: Paraje / llanura
-Ubicación: Isla Soledad
-Reseña:
-Escenario de la batalla de Pradera del Ganso (Goose Green), del 27 al 29 de mayo de 1982: la primera y más prolongada batalla terrestre de la guerra, en la que la Agrupación Mercedes (Regimientos de Infantería 12 y 25) resistió al 2.º Batallón de Paracaidistas británico.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: monte-tumbledown]
-------------------------------------------------------------------------
-Nombre propuesto: Monte Tumbledown
-Tipo: Monte de combate
-Ubicación: Isla Soledad, cercanías de Puerto Argentino
-Reseña:
-Altura ubicada en las proximidades de Puerto Argentino. Fue defendida por tropas argentinas, especialmente del Batallón de Infantería de Marina N.º 5, y escenario de intensos combates durante la noche del 13 al 14 de junio de 1982, en las horas finales de la guerra.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: monte-harriet]
-------------------------------------------------------------------------
-Nombre propuesto: Monte Harriet / Enriqueta
-Tipo: Monte de combate
-Ubicación: Sudoeste de Puerto Argentino, Isla Soledad
-Reseña:
-Elevación ubicada al sudoeste de Puerto Argentino. Formó parte del sistema defensivo argentino que protegía la capital de las islas y fue escenario de combate durante la noche del 11 al 12 de junio de 1982.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: monte-kent]
-------------------------------------------------------------------------
-Nombre propuesto: Monte Kent
-Tipo: Monte estratégico
-Ubicación: Isla Soledad, sistema defensivo de Puerto Argentino
-Reseña:
-Elevación próxima al sistema defensivo de Puerto Argentino. Durante la guerra de 1982 fue escenario de acciones militares vinculadas al avance sobre la capital de las islas y a la actuación de fuerzas especiales argentinas y británicas.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: cerro-zapador]
-------------------------------------------------------------------------
-Nombre propuesto: Cerro Zapador
-Tipo: Cerro
-Ubicación: Oeste de Puerto Argentino, Isla Soledad
-Reseña:
-Altura ubicada al oeste de Puerto Argentino. Por su localización, representa uno de los accidentes geográficos próximos al núcleo defensivo argentino de 1982 y conserva una denominación de fuerte carga simbólica vinculada al esfuerzo militar y de ingenieros en campaña.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: cerro-alberdi]
-------------------------------------------------------------------------
-Nombre propuesto: Cerro Alberdi
-Tipo: Cerro — punto más alto
-Ubicación: Isla Soledad
-Reseña:
-Con aproximadamente 705 metros sobre el nivel del mar, constituye el punto más alto de las Islas Malvinas. Su nombre homenajea a Juan Bautista Alberdi, autor intelectual de la Constitución Argentina de 1853, uniendo en una misma denominación geografía, soberanía e identidad nacional.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: cerro-vernet]
-------------------------------------------------------------------------
-Nombre propuesto: Cerro Vernet
-Tipo: Cerro
-Ubicación: Noreste de la Isla Soledad, norte de península Freycinet
-Reseña:
-Elevación ubicada al norte de la península de Freycinet. Su denominación recuerda a Luis Vernet, comandante político y militar argentino de las Islas Malvinas en el siglo XIX, figura central en la historia de la soberanía argentina sobre el archipiélago.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: islas-de-los-leones-marinos]
-------------------------------------------------------------------------
-Nombre propuesto: Islas de los Leones Marinos
-Tipo: Grupo insular
-Ubicación: Sur de la Isla Soledad
-Reseña:
-Conjunto de islas, islotes y rocas ubicado al sur de la Isla Soledad. Su nombre integra la toponimia argentina oficial y permite incorporar al nomenclador no solo cerros y bahías, sino también la riqueza insular y marítima del archipiélago.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: monte-longdon]
-------------------------------------------------------------------------
-Nombre propuesto: Monte Longdon
-Tipo: Monte de combate
-Ubicación: Oeste de Puerto Argentino, Isla Soledad
-Reseña:
-Elevación situada al oeste de Puerto Argentino. Fue uno de los puntos defensivos más importantes de la primera línea argentina y escenario de uno de los combates más encarnizados de la guerra, librado durante la noche del 11 al 12 de junio de 1982.
-
-------------------------------------------------------------------------
-NO EDITAR: [ALTERNATIVA: monte-maria]
-------------------------------------------------------------------------
-Nombre propuesto: Monte María
-Tipo: Monte
-Ubicación: Sector oriental de la Gran Malvina, noroeste de Puerto Mitre
-Reseña:
-Elevación ubicada en el sector oriental de la Gran Malvina, al noroeste de Puerto Mitre. Con aproximadamente 658 metros sobre el nivel del mar, constituye una de las principales alturas de la isla Gran Malvina. Su cercanía a Puerto Mitre/Puerto Yapeyú lo vincula con el despliegue argentino en esa zona durante la guerra de 1982.

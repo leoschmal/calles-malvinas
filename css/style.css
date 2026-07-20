@@ -674,30 +674,6 @@ section{ padding: 84px 0; }
 }
 .detail-map svg{ width: 100%; height: auto; display: block; }
 
-/* ---------- Alternativas ---------- */
-.alternativas{ background: var(--parchment); }
-.alt-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
-}
-.alt-card{
-  text-align: left;
-  border: 1px solid var(--parchment-line);
-  background: #fff;
-  border-radius: var(--radius-m);
-  padding: 18px 20px;
-  cursor: pointer;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-.alt-card:hover{ box-shadow: var(--shadow-card); transform: translateY(-2px); }
-.alt-card__name{ font-family: var(--font-display); font-size: 1.1rem; color: var(--ink-navy); }
-.alt-card__tipo{
-  font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase;
-  color: var(--contour-ochre); letter-spacing: 0.05em; margin-top: 4px; display: block;
-}
-.alt-card__resumen{ margin-top: 10px; font-size: 0.9rem; color: var(--ink-text-soft); }
-
 /* ---------- Participar ---------- */
 .participar{
   background: var(--ink-navy-deep);
