@@ -25,7 +25,7 @@ const STREETS = [
     ubicacion: "Noroeste de la Isla Soledad, entrada de la Bahía San Carlos",
     dato: "Posición argentina que resistió el desembarco británico en 1982",
     resena:
-      "Accidente geográfico ubicado en la entrada de la Bahía San Carlos. Tuvo relevancia durante la guerra de 1982 por ser una posición argentina que resistió el desembarco británico en San Carlos. Su nombre recuerda al general Martín Miguel de Güemes, héroe de la Independencia argentina, incorporando al nomenclador una referencia geográfica de Malvinas con fuerte valor histórico y patriótico.",
+      "Accidente geográfico ubicado en la entrada de la Bahía San Carlos. Su nombre recuerda al general Martín Miguel de Güemes, héroe de la Independencia argentina, incorporando al nomenclador una referencia geográfica de Malvinas con fuerte valor histórico y patriótico. Tuvo relevancia durante la guerra de 1982 por ser una posición argentina que resistió el desembarco británico en San Carlos.",
     mapa: { x: 671.8, y: 241.7 },
     planoPos: { x: 74.3, y: 13.3 },
     img: {
@@ -59,7 +59,7 @@ const STREETS = [
   },
   {
     numero: "1678",
-    propuesta: "Puerto Mitre / Puerto Yapeyú",
+    propuesta: "Puerto Mitre",
     slug: "puerto-mitre",
     tipo: "Puerto",
     ubicacion: "Costa oriental de la Gran Malvina, Estrecho de San Carlos",
@@ -85,7 +85,7 @@ const STREETS = [
     ubicacion: "Istmo de Darwin, Isla Soledad",
     dato: "Allí se encuentra el Cementerio Argentino de Darwin",
     resena:
-      "Sitio vinculado directamente al eje Darwin–Pradera del Ganso. Durante la guerra de 1982 formó parte del dispositivo defensivo argentino en la zona del istmo, donde combatieron efectivos del Ejército Argentino y de la Fuerza Aérea Argentina. Allí se encuentra el Cementerio Argentino.",
+      "Allí se encuentra el Cementerio Argentino. Vinculado directamente al eje Darwin–Pradera del Ganso. Durante la guerra de 1982 formó parte del dispositivo defensivo argentino en la zona del istmo, donde combatieron efectivos del Ejército Argentino y de la Fuerza Aérea Argentina.",
     mapa: { x: 717.2, y: 417.4 },
     planoPos: { x: 80.5, y: 60.8 },
     img: {
@@ -145,7 +145,7 @@ const STREETS = [
     ubicacion: "Oeste de Puerto Argentino, Isla Soledad",
     dato: "Escenario de la batalla de la noche del 11 al 12 de junio de 1982",
     resena:
-      "Elevación ubicada al oeste de Puerto Argentino, conocida también en la toponimia argentina como Cerro de la Silla. Durante la guerra de 1982 fue escenario de la Batalla del Monte Dos Hermanas, librada durante la noche del 11 al 12 de junio, dentro del sistema de alturas que defendían el acceso a Puerto Argentino.",
+      "Elevación de morfología muy particular, de la cual debe su nombre, ubicada al oeste de Puerto Argentino, conocida también en la toponimia argentina como Cerro de la Silla. Durante la guerra de 1982 fue escenario de la Batalla del Monte Dos Hermanas, librada durante la noche del 11 al 12 de junio, dentro del sistema de alturas que defendían el acceso a Puerto Argentino.",
     mapa: { x: 986.5, y: 355.9 },
     planoPos: { x: 15.0, y: 88.8 },
     img: {
@@ -163,9 +163,9 @@ const STREETS = [
     slug: "isla-borbon",
     tipo: "Isla",
     ubicacion: "Norte de la Gran Malvina",
-    dato: "Sufrió un raid de comandos SAS que destruyó once aviones en 1982",
+    dato: "Allí se encuentran grandes colonias de pingüinos de penacho amarillo y otras especies",
     resena:
-      "Pequeña isla al norte de la Gran Malvina, sede de la Estación Aeronaval Calderón. En la noche del 14 al 15 de mayo de 1982 sufrió una incursión de comandos británicos (SAS) que destruyó once aeronaves argentinas.",
+      "Pequeña isla al norte de la Gran Malvina, sede de la Estación Aeronaval Calderón. En la noche del 14 al 15 de mayo de 1982 sufrió una incursión de comandos británicos (SAS) que destruyó aeronaves argentinas. Posee numerosas playas de arenas blancas, colonias de pingüinos y tres enormes montes desde donde se tienen espectaculares vistas.",
     mapa: { x: 524.4, y: 180.1 },
     planoPos: { x: 57.7, y: 57.1 },
     img: {
@@ -183,7 +183,7 @@ const STREETS = [
     slug: "bahia-elefante-marino",
     tipo: "Bahía",
     ubicacion: "Norte de la Isla de Borbón",
-    dato: "Nombre oficial IGN; en su entorno está Puerto Calderón",
+    dato: "Gran bahía de arenas blancas al norte de la Isla Borbón",
     resena:
       "El nombre completo es Bahía Elefante Marino, tal como figura en la toponimia del Instituto Geográfico Nacional. Es una amplia entrada de agua situada al norte de la Isla de Borbón; en su entorno se encuentra Puerto Calderón, zona vinculada a acciones militares durante la guerra de 1982.",
     mapa: { x: 547.1, y: 173.5 },
@@ -263,9 +263,9 @@ const STREETS = [
     slug: "bahia-agradable",
     tipo: "Bahía",
     ubicacion: "Costa sudeste de la Isla Soledad",
-    dato: "Su entorno (Bluff Cove–Fitzroy) sufrió los ataques aéreos del 8 de junio de 1982",
+    dato: "Su entorno sufrió los ataques aéreos del 8 de junio de 1982",
     resena:
-      "Bahía de la costa sudeste de la Isla Soledad. Su entorno (Bluff Cove–Fitzroy) fue escenario de los ataques aéreos del 8 de junio de 1982.",
+      "Bahía de la costa sudeste de la Isla Soledad. Su entorno fue escenario de los ataques aéreos del 8 de junio de 1982.",
     mapa: { x: 864.6, y: 417.4 },
     planoPos: { x: 35.8, y: 73.5 },
     img: {

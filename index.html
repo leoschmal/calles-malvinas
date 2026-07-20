@@ -90,10 +90,18 @@
   </div>
 </section>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="clothWave" x="-25%" y="-25%" width="150%" height="150%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.012 0.022" numOctaves="2" seed="7" result="noise"></feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="14" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+  </filter>
+</svg>
+
 <!-- Cartel manuscrito: alusión a la bandera "Las Malvinas son argentinas" -->
 <section class="flag-callout">
   <div class="container">
     <div class="flag-callout__banner">
+      <div class="flag-callout__cloth" aria-hidden="true"></div>
       <span class="flag-callout__text">Las<br>Malvinas<br>son<br>argentinas</span>
     </div>
   </div>
@@ -104,7 +112,7 @@
     <div class="section-head">
       <div class="eyebrow">Por qué Malvinas en cada esquina</div>
       <h2>No son nombres cualquiera</h2>
-      <p>Cada nombre propuesto corresponde a un lugar real del archipiélago: una bahía, un puerto, un monte. No se inventó ninguno.</p>
+      <p>Cada nombre propuesto corresponde a un lugar real de las islas: una bahía, un puerto, un monte. La geografía y los lugares de las Malvinas, presentes en el barrio.</p>
     </div>
     <div class="fundamentacion__grid">
       <div class="pull-wrap">
@@ -139,7 +147,7 @@
     <div class="section-head">
       <div class="eyebrow">Tocá tu calle</div>
       <h2>El plano real del barrio</h2>
-      <p>Para ordenar el trazado, el proyecto agrupó las calles por tipo: las que van de norte a sur llevan nombres de bahías; las que van de este a oeste, nombres de puertos. Es solo un criterio para organizar el plano del barrio — las islas en sí no siguen ningún patrón así.</p>
+      <p>Para ordenar el trazado, el proyecto agrupó las calles por tipo: las que van de norte a sur llevan nombres de bahías; las que van de este a oeste, nombres de puertos. Es solo un criterio para organizar el plano del barrio.</p>
     </div>
     <div class="finder">
       <label class="finder__label" for="numberChips">Hoy tu calle solo tiene número. ¿Cuál es la tuya?</label>
@@ -163,7 +171,7 @@
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Reserva de nombres</div>
-      <h2>Diez lugares más de la toponimia malvinense</h2>
+      <h2>Diez lugares más de la geografía malvinense</h2>
       <p>Estos nombres todavía no están asignados a ninguna calle. Quedan disponibles como alternativas, por si hiciera falta ajustar alguna denominación de la lista principal.</p>
     </div>
     <div class="alt-grid" id="altGrid"></div>
@@ -207,7 +215,7 @@
 
 <footer>
   <div class="container">
-    Sitio vecinal no oficial, elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. Fotografías con licencia libre vía Wikimedia Commons — crédito de autor y licencia detallado en cada ficha. Contorno de las islas adaptado de "Falkland Islands location map" por NordNordWest (Wikimedia Commons, CC BY-SA 3.0), sin nombres en inglés agregados por nosotros. Mapa del barrio: plano propio del proyecto. Ubicaciones esquemáticas, no a escala.
+    Elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. Contorno de las islas adaptado de "Falkland Islands location map" por NordNordWest (Wikimedia Commons, CC BY-SA 3.0).
   </div>
 </footer>
 

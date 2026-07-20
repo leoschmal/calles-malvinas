@@ -201,24 +201,27 @@
       <div class="detail-map">${renderIslandsMap(item.mapa, item.propuesta)}</div>
     `;
 
-    // Si existe una foto propia en img/calles|alternativas/<slug>.jpg se usa esa;
-    // si no, se cae automáticamente a la foto de Wikimedia (con crédito visible).
+    // Si existe una foto propia en img/calles|alternativas/<slug>.<ext> se usa esa
+    // (probando varias extensiones); si no, se cae a la foto de Wikimedia (con crédito visible).
     const imgEl = document.getElementById("detailImg");
     const creditEl = document.getElementById("detailCredit");
-    const localPath = `img/${isAssigned ? "calles" : "alternativas"}/${item.slug}.jpg`;
+    const localBase = `img/${isAssigned ? "calles" : "alternativas"}/${item.slug}`;
+    const localExts = ["jpg", "jpeg", "png", "webp"];
     creditEl.style.display = "none";
-    imgEl.addEventListener(
-      "error",
-      function onErr() {
+    let extIndex = 0;
+    imgEl.addEventListener("error", function onErr() {
+      extIndex++;
+      if (extIndex < localExts.length) {
+        imgEl.src = `${localBase}.${localExts[extIndex]}`;
+      } else {
         imgEl.removeEventListener("error", onErr);
         imgEl.src = item.img.src;
-      },
-      { once: true }
-    );
+      }
+    });
     imgEl.addEventListener("load", function onLoad() {
       creditEl.style.display = imgEl.src === item.img.src ? "" : "none";
     });
-    imgEl.src = localPath;
+    imgEl.src = `${localBase}.${localExts[0]}`;
 
     document.getElementById("detailCloseBtn").addEventListener("click", closeDetail);
     panel.classList.add("is-open");

@@ -40,7 +40,7 @@ Título de la sección:
 No son nombres cualquiera
 
 Texto debajo del título:
-Cada nombre propuesto corresponde a un lugar real de las islas: una bahía, un puerto, un monte. La Geografía y lugares delas Malvinas, presentes en el barrio.
+Cada nombre propuesto corresponde a un lugar real de las islas: una bahía, un puerto, un monte. La geografía y los lugares de las Malvinas, presentes en el barrio.
 
 Cita destacada:
 "Las Islas Malvinas son parte integrante e indivisible del territorio nacional argentino. Dar a las calles del barrio los nombres de lugares reales de las islas es una forma concreta de mantener viva su presencia en el espacio público."
@@ -109,7 +109,7 @@ Fuente: Propuesta de Nomenclatura de Calles — Toponimia de las Islas Malvinas,
 NO EDITAR: [GENERAL: footer]
 ------------------------------------------------------------------------
 Texto del pie de página:
-Elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. 
+Elaborado para difundir la propuesta de nomenclatura del barrio Altos del Paracao, Paraná. Contorno de las islas adaptado de "Falkland Islands location map" por NordNordWest (Wikimedia Commons, CC BY-SA 3.0).
 
 
 ========================================================================
@@ -142,7 +142,7 @@ Nombre utilizado en homenaje al Gaucho Antonio Rivero, figura vinculada al alzam
 NO EDITAR: [CALLE: puerto-mitre]
 ------------------------------------------------------------------------
 Número actual: 1678
-Nombre propuesto: Puerto Mitre / Puerto Yapeyú
+Nombre propuesto: Puerto Mitre
 Tipo: Puerto
 Ubicación: Costa oriental de la Gran Malvina, Estrecho de San Carlos
 Dato destacado: Allí se desplegó el Regimiento de Infantería 5 en 1982
@@ -158,7 +158,7 @@ Tipo: Puerto
 Ubicación: Istmo de Darwin, Isla Soledad
 Dato destacado: Allí se encuentra el Cementerio Argentino de Darwin
 Reseña:
-Sitio vinculado directamente al eje Darwin–Pradera del Ganso. Durante la guerra de 1982 formó parte del dispositivo defensivo argentino en la zona del istmo, donde combatieron efectivos del Ejército Argentino y de la Fuerza Aérea Argentina. Allí se encuentra el Cementerio Argentino.
+Allí se encuentra el Cementerio Argentino. Vinculado directamente al eje Darwin–Pradera del Ganso. Durante la guerra de 1982 formó parte del dispositivo defensivo argentino en la zona del istmo, donde combatieron efectivos del Ejército Argentino y de la Fuerza Aérea Argentina. 
 
 ------------------------------------------------------------------------
 NO EDITAR: [CALLE: puerto-soledad]
@@ -191,7 +191,7 @@ Tipo: Monte de combate
 Ubicación: Oeste de Puerto Argentino, Isla Soledad
 Dato destacado: Escenario de la batalla de la noche del 11 al 12 de junio de 1982
 Reseña:
-Elevación ubicada al oeste de Puerto Argentino, conocida también en la toponimia argentina como Cerro de la Silla. Durante la guerra de 1982 fue escenario de la Batalla del Monte Dos Hermanas, librada durante la noche del 11 al 12 de junio, dentro del sistema de alturas que defendían el acceso a Puerto Argentino.
+Elevación de morfología muy particular, de la cual debe su nombre, ubicada al oeste de Puerto Argentino, conocida también en la toponimia argentina como Cerro de la Silla. Durante la guerra de 1982 fue escenario de la Batalla del Monte Dos Hermanas, librada durante la noche del 11 al 12 de junio, dentro del sistema de alturas que defendían el acceso a Puerto Argentino.
 
 ------------------------------------------------------------------------
 NO EDITAR: [CALLE: isla-borbon]
@@ -200,9 +200,9 @@ Número actual: 1781
 Nombre propuesto: Isla Borbón
 Tipo: Isla
 Ubicación: Norte de la Gran Malvina
-Dato destacado: Sufrió un raid de comandos SAS que destruyó once aviones en 1982
+Dato destacado: Allí se encuentran grandes colonias de pingüinos de penacho amarillo y otras especies.
 Reseña:
-Pequeña isla al norte de la Gran Malvina, sede de la Estación Aeronaval Calderón. En la noche del 14 al 15 de mayo de 1982 sufrió una incursión de comandos británicos (SAS) que destruyó once aeronaves argentinas.
+Pequeña isla al norte de la Gran Malvina, sede de la Estación Aeronaval Calderón. En la noche del 14 al 15 de mayo de 1982 sufrió una incursión de comandos británicos (SAS) que destruyó aeronaves argentinas. Posee numerosas playas de arenas blancas, colonias de pingüinos y tres enormes montes desde donde se tienen espectaculares vistas.
 
 ------------------------------------------------------------------------
 NO EDITAR: [CALLE: bahia-elefante-marino]
@@ -211,7 +211,7 @@ Número actual: 1853
 Nombre propuesto: Bahía Elefante Marino
 Tipo: Bahía
 Ubicación: Norte de la Isla de Borbón
-Dato destacado: Nombre oficial IGN; en su entorno está Puerto Calderón
+Dato destacado: Gran bahía de arenas blancas al norte de la Isla Borbón
 Reseña:
 El nombre completo es Bahía Elefante Marino, tal como figura en la toponimia del Instituto Geográfico Nacional. Es una amplia entrada de agua situada al norte de la Isla de Borbón; en su entorno se encuentra Puerto Calderón, zona vinculada a acciones militares durante la guerra de 1982.
 
@@ -255,9 +255,9 @@ Número actual: 1861
 Nombre propuesto: Bahía Agradable
 Tipo: Bahía
 Ubicación: Costa sudeste de la Isla Soledad
-Dato destacado: Su entorno (Bluff Cove–Fitzroy) sufrió los ataques aéreos del 8 de junio de 1982
+Dato destacado: Su entorno sufrió los ataques aéreos del 8 de junio de 1982
 Reseña:
-Bahía de la costa sudeste de la Isla Soledad. Su entorno (Bluff Cove–Fitzroy) fue escenario de los ataques aéreos del 8 de junio de 1982.
+Bahía de la costa sudeste de la Isla Soledad. Su entorno fue escenario de los ataques aéreos del 8 de junio de 1982.
 
 
 ========================================================================

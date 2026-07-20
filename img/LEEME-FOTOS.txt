@@ -1,4 +1,6 @@
-FOTOS PARA EL SITIO — poné cada foto con el nombre EXACTO indicado (jpg o png).
+FOTOS PARA EL SITIO — poné cada foto con el nombre EXACTO indicado (el nombre
+antes del punto tiene que ser igual; la extensión puede ser .jpg, .jpeg, .png
+o .webp, cualquiera de esas funciona).
 Si el archivo existe, se usa automaticamente en vez de la foto de Wikimedia.
 
 === img/calles/ (13 calles con numero actual) ===
