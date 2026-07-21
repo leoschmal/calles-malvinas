@@ -252,7 +252,7 @@ section{ padding: 84px 0; }
 }
 
 /* ---------- Fundamentación ---------- */
-.fundamentacion{ background: var(--parchment); }
+.fundamentacion{ background: var(--parchment); padding-top: 28px; }
 .fundamentacion__grid{
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -284,7 +284,7 @@ section{ padding: 84px 0; }
 /* ---------- Cartel manuscrito bajo el hero (alusión a la bandera del Mundial) ---------- */
 .flag-callout{
   background: var(--parchment);
-  padding: 40px 0 44px;
+  padding: 40px 0 8px;
   text-align: center;
 }
 .flag-callout__banner{
@@ -673,6 +673,56 @@ section{ padding: 84px 0; }
   padding: 10px;
 }
 .detail-map svg{ width: 100%; height: auto; display: block; }
+
+/* ---------- Cronología ---------- */
+.cronologia{ background: var(--parchment); }
+.timeline{
+  position: relative;
+  margin-top: 8px;
+  padding-left: 28px;
+  border-left: 2px solid var(--parchment-line);
+}
+.timeline__item{
+  position: relative;
+  padding: 0 0 26px 24px;
+}
+.timeline__item:last-child{ padding-bottom: 0; }
+.timeline__item::before{
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brass);
+  box-shadow: 0 0 0 4px var(--parchment);
+}
+.timeline__item--highlight::before{
+  width: 14px;
+  height: 14px;
+  left: -33px;
+  top: 2px;
+  background: var(--wax-red);
+}
+.timeline__year{
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--wax-red);
+  margin-bottom: 4px;
+}
+.timeline__item--highlight .timeline__year{ font-size: 14px; }
+.timeline__text{ color: var(--ink-text-soft); font-size: 0.96rem; margin: 0; }
+.timeline__item--highlight .timeline__text{ color: var(--ink-text); font-weight: 500; }
+
+@media (max-width: 600px){
+  .timeline{ padding-left: 18px; }
+  .timeline__item{ padding-left: 16px; }
+  .timeline__item::before{ left: -25px; }
+  .timeline__item--highlight::before{ left: -27px; }
+}
 
 /* ---------- Participar ---------- */
 .participar{
