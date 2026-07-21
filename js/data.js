@@ -45,7 +45,7 @@ const STREETS = [
     ubicacion: "Isla Soledad — denominación histórica y simbólica",
     dato: "Homenaje al gaucho Antonio Rivero y su alzamiento de 1833",
     resena:
-      "Nombre utilizado en homenaje al Gaucho Antonio Rivero, figura vinculada al alzamiento ocurrido en las islas en 1833 luego de la ocupación británica. Si bien no es un accidente geográfico en sentido estricto como cerro, bahía o estrecho, posee fuerte valor histórico y popular dentro de la memoria argentina sobre Malvinas.",
+      "Nombre utilizado en homenaje al Gaucho Antonio Rivero, figura vinculada al alzamiento ocurrido en las islas en 1833 luego de la ocupación británica. Si bien no es un accidente geográfico en sentido estricto como cerro, bahía o estrecho, posee fuerte valor histórico y popular dentro de la memoria argentina y entrerriana sobre Malvinas.",
     mapa: { x: 949.6, y: 276.8 },
     planoPos: { x: 81.1, y: 40.2 },
     img: {
