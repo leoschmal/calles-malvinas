@@ -716,7 +716,6 @@ section{ padding: 84px 0; }
 .timeline__item--highlight .timeline__year{ font-size: 14px; }
 .timeline__text{ color: var(--ink-text-soft); font-size: 0.96rem; margin: 0; }
 .timeline__item--highlight .timeline__text{ color: var(--ink-text); font-weight: 500; }
-.timeline__extra[hidden]{ display: none; }
 
 .timeline__toggle{
   display: inline-flex;
