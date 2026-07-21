@@ -51,7 +51,7 @@ const STREETS = [
     img: {
       src: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Tusac_grass_01.jpg",
       aprox: true,
-      nota: "Nombre simbólico sin sitio geográfico propio; paisaje representativo de pastizales de East Falkland.",
+      nota: "Nombre simbólico sin sitio geográfico propio; paisaje representativo de pastizales de la Isla Soledad.",
       autor: "michael clarke stuff",
       licencia: "CC BY-SA 2.0",
       credito: "https://commons.wikimedia.org/wiki/File:Tusac_grass_01.jpg",
@@ -191,7 +191,7 @@ const STREETS = [
     img: {
       src: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Elephant_seals_wallowing_in_the_mud_%2849764185427%29.jpg",
       aprox: true,
-      nota: "Elefantes marinos fotografiados en East Falkland; imagen temática, no del sitio exacto de la bahía.",
+      nota: "Elefantes marinos fotografiados en la Isla Soledad; imagen temática, no del sitio exacto de la bahía.",
       autor: "Chris Lovelock",
       licencia: "CC BY 2.0",
       credito: "https://commons.wikimedia.org/wiki/File:Elephant_seals_wallowing_in_the_mud_(49764185427).jpg",
