@@ -66,6 +66,7 @@ Datos numéricos del encabezado (hero):
 1833 — Usurpación británica
 1982 — Guerra de Malvinas
 +200 — Islas e islotes del archipiélago
+25% — Del territorio argentino en disputa
 
 ------------------------------------------------------------------------
 NO EDITAR: [GENERAL: plano-intro]
@@ -119,7 +120,7 @@ Programa "Elegí el nombre" — Presupuesto Participativo
 Texto debajo del título:
 La propuesta se presenta ante la Municipalidad de Paraná dentro del programa de Presupuesto Participativo, dentro del marco de la Ordenanza N.° 9076.
 
-Paso 1 — título: Un expediente con fundamentos
+Paso 1 — título: Una propuesta con fundamentos
 Paso 1 — texto:
 Trece calles sin nombre del barrio, cada una con su denominación propuesta, tipo de accidente geográfico y reseña histórica — encuadrada en el reglamento del programa.
 

@@ -226,6 +226,21 @@
     document.body.style.overflow = "";
   }
 
+  /* ---------------- Cronología desplegable ---------------- */
+  function initTimelineToggle() {
+    const toggle = document.getElementById("timelineToggle");
+    const extra = document.getElementById("timelineExtra");
+    if (!toggle || !extra) return;
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      extra.hidden = expanded;
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      toggle.firstChild.textContent = expanded
+        ? "Ver cronología completa (7 hitos más) "
+        : "Ver menos ";
+    });
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     renderPlanoBgIslands();
@@ -233,6 +248,7 @@
     renderNeighborhoodPlan();
     renderStreetGrid();
     renderNumberChips();
+    initTimelineToggle();
 
     document.getElementById("detailOverlay").addEventListener("click", closeDetail);
     document.addEventListener("keydown", (ev) => {

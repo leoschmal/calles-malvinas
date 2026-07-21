@@ -716,6 +716,28 @@ section{ padding: 84px 0; }
 .timeline__item--highlight .timeline__year{ font-size: 14px; }
 .timeline__text{ color: var(--ink-text-soft); font-size: 0.96rem; margin: 0; }
 .timeline__item--highlight .timeline__text{ color: var(--ink-text); font-weight: 500; }
+.timeline__extra[hidden]{ display: none; }
+
+.timeline__toggle{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 26px;
+  padding: 11px 22px;
+  background: none;
+  border: 1px solid var(--contour-ochre);
+  border-radius: var(--radius-m);
+  color: var(--contour-ochre);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.timeline__toggle:hover{ background: var(--contour-ochre); color: #fff; }
+.timeline__toggle-arrow{ transition: transform 0.2s ease; }
+.timeline__toggle[aria-expanded="true"] .timeline__toggle-arrow{ transform: rotate(180deg); }
 
 @media (max-width: 600px){
   .timeline{ padding-left: 18px; }
