@@ -236,7 +236,7 @@
       extra.hidden = expanded;
       toggle.setAttribute("aria-expanded", String(!expanded));
       toggle.firstChild.textContent = expanded
-        ? "Ver cronología completa (20 hitos) "
+        ? "Ver cronología completa "
         : "Ver menos ";
     });
   }

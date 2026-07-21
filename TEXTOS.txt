@@ -81,37 +81,6 @@ Pregunta del buscador de calles:
 Hoy tu calle solo tiene número. ¿Cuál es la tuya?
 
 ------------------------------------------------------------------------
-NO EDITAR: [GENERAL: cronologia]
-------------------------------------------------------------------------
-Título de la sección:
-Cómo el Reino Unido usurpó las islas
-
-Texto debajo del título:
-Una línea de tiempo con los hechos centrales de la disputa de soberanía: desde el primer asentamiento, en 1764, hasta el reclamo argentino de hoy.
-
-Línea de tiempo:
-1764 — Bougainville funda Puerto Luis en nombre de Francia — de los marinos de Saint-Malo viene el nombre "Malouines", origen de "Malvinas".
-1766 — Gran Bretaña funda Puerto Egmont, sin saber de la presencia francesa.
-1767 — Ante el reclamo español, Francia cede el asentamiento a España, que lo rebautiza Puerto Soledad.
-1770 — España expulsa por la fuerza a los británicos de Puerto Egmont.
-1771 — Un acuerdo diplomático restituye Puerto Egmont a Gran Bretaña, sin resolver la soberanía de fondo.
-1774 — Gran Bretaña abandona Puerto Egmont por razones económicas y deja solo una placa reclamando soberanía; España queda como única potencia presente en las islas.
-1816 — Independencia argentina: por el principio de derecho internacional uti possidetis iuris, hereda de España la soberanía sobre las islas.
-1820 — David Jewett toma posesión formal en nombre de las Provincias Unidas — Gran Bretaña no protesta.
-1829 — Luis Vernet, primer comandante político-militar argentino de las islas.
-Dic. 1831 — La fragata estadounidense USS Lexington ataca y saquea Puerto Soledad.
-1832 — Motín en la colonia; asesinato del comandante Mestivier.
-2 ene. 1833 — La corbeta HMS Clío intima al comandante argentino a retirarse en 24 horas.
-3 de enero de 1833 (hito destacado) — Usurpación británica: arrían la bandera argentina e izan la británica en Puerto Soledad.
-5 ene. 1833 — Expulsión de la guarnición y de parte de la población civil argentina.
-Ene. 1833 — Primera protesta diplomática argentina — reiterada ininterrumpidamente desde entonces.
-1965 — Resolución 2065 (XX) de la ONU: reconoce la disputa de soberanía e insta a negociar según los "intereses" —no los "deseos"— de los isleños.
-1971 — Acuerdo de Comunicaciones: Argentina construye la pista de Puerto Argentino, LADE vuela dos veces por semana desde el continente, YPF instala la planta "Antares" y los isleños estudian becados y se atienden en hospitales argentinos.
-1973 — Ley 20.561: el 10 de junio queda establecido como Día de la Reafirmación de los Derechos Argentinos sobre las Malvinas — un reclamo que se repite cada año desde entonces.
-1982 — Guerra de Malvinas.
-Hoy — El Reino Unido se niega a negociar la soberanía de fondo; la Argentina reafirma el reclamo cada año ante la ONU.
-
-------------------------------------------------------------------------
 NO EDITAR: [GENERAL: participar]
 ------------------------------------------------------------------------
 Título de la sección:
@@ -134,6 +103,37 @@ Cuantos más vecinos conozcan esta propuesta, la charlen y la voten, más chance
 
 Caja de fuente (al pie de la sección):
 Fuente: Propuesta de Nomenclatura de Calles — Toponimia de las Islas Malvinas, Barrio Altos del Paracao. Programa Presupuesto Participativo, Municipalidad de Paraná (Ordenanza N.° 9076). Denominaciones verificadas contra el nomenclador urbano vigente (Ordenanza N.° 5554 y modificatorias).
+
+------------------------------------------------------------------------
+NO EDITAR: [GENERAL: cronologia]
+------------------------------------------------------------------------
+Título de la sección (esta va al final del sitio, colapsada detrás de un botón "Ver cronología completa"):
+¿Querés saber más?
+
+Texto debajo del título:
+Una línea de tiempo con los hechos centrales de la disputa de soberanía: desde el primer asentamiento, en 1764, hasta el reclamo argentino de hoy.
+
+Línea de tiempo:
+1764 — Bougainville funda Puerto Luis en nombre de Francia — de los marinos de Saint-Malo viene el nombre "Malouines", origen de "Malvinas".
+1766 — Gran Bretaña funda Puerto Egmont, sin saber de la presencia francesa.
+1767 — Ante el reclamo español, Francia cede el asentamiento a España, que lo rebautiza Puerto Soledad.
+1770 — España expulsa por la fuerza a los británicos de Puerto Egmont.
+1771 — Un acuerdo diplomático permite el regreso británico a Puerto Egmont, pero España no cede en ningún momento su reclamo de soberanía sobre el archipiélago.
+1774 — Gran Bretaña abandona Puerto Egmont por razones económicas y deja solo una placa reclamando soberanía; España queda como única potencia presente en las islas.
+1816 — Independencia argentina: por el principio de derecho internacional uti possidetis iuris, hereda de España la soberanía sobre las islas.
+1820 — David Jewett toma posesión formal en nombre de las Provincias Unidas — Gran Bretaña no protesta.
+1829 — Luis Vernet, primer comandante político-militar argentino de las islas.
+Dic. 1831 — La fragata estadounidense USS Lexington ataca y saquea Puerto Soledad, debilitando la colonia argentina poco antes de la usurpación británica.
+1832 — Motín en la colonia; asesinato del comandante Mestivier.
+2 ene. 1833 — La corbeta HMS Clío intima al comandante argentino a retirarse en 24 horas.
+3 de enero de 1833 (hito destacado) — Usurpación británica: arrían la bandera argentina e izan la británica en Puerto Soledad.
+5 ene. 1833 — Expulsión de la guarnición y de parte de la población civil argentina.
+Ene. 1833 — Primera protesta diplomática argentina — reiterada ininterrumpidamente desde entonces.
+1965 — Resolución 2065 (XX) de la ONU: reconoce la disputa de soberanía e insta a negociar según los "intereses" —no los "deseos"— de los isleños.
+1971 — Acuerdo de Comunicaciones: Argentina construye la pista de Puerto Argentino, LADE vuela dos veces por semana desde el continente, YPF instala la planta "Antares" y los isleños estudian becados y se atienden en hospitales argentinos.
+1973 — Ley 20.561: el 10 de junio queda establecido como Día de la Reafirmación de los Derechos Argentinos sobre las Malvinas — un reclamo que se repite cada año desde entonces.
+1982 — Argentina intenta recuperar por la fuerza las islas usurpadas en 1833; tras la guerra, el Reino Unido refuerza aún más su ocupación militar del archipiélago.
+Hoy — El Reino Unido se niega a negociar la soberanía de fondo; la Argentina reafirma el reclamo cada año ante la ONU.
 
 ------------------------------------------------------------------------
 NO EDITAR: [GENERAL: footer]
