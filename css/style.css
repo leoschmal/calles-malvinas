@@ -25,6 +25,7 @@
   --brass: #B08D42;
   --wax-red: #9C3B26;
   --wax-red-light: #C1573B;
+  --sign-blue: #1E3F70;
   --ink-text: #1C1B16;
   --ink-text-soft: rgba(28,27,22,0.66);
   --cream-text: #F4EFE2;
@@ -526,35 +527,101 @@ section{ padding: 84px 0; }
 
 .street-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px 18px;
 }
 .street-card{
   text-align: left;
-  background: rgba(244,239,226,0.05);
-  border: 1px solid rgba(176,141,66,0.28);
-  border-radius: var(--radius-m);
-  padding: 16px 18px;
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  transition: transform 0.15s ease;
 }
 .street-card:hover, .street-card:focus{
-  background: rgba(244,239,226,0.09);
-  border-color: var(--brass);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   outline: none;
 }
-.street-card__num{
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--cream-text-faint);
-  letter-spacing: 0.04em;
+.street-card:hover .cartel__arrows, .street-card:focus .cartel__arrows,
+.street-card:hover .cartel__board, .street-card:focus .cartel__board{
+  border-color: var(--brass);
 }
-.street-card__name{
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  margin: 6px 0 8px;
+
+/* ---- Cartel vial "Las Malvinas son argentinas" ---- */
+.cartel{
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+.cartel__arrows, .cartel__board{
+  background: var(--sign-blue);
+  border: 3px solid rgba(244,239,226,0.9);
+  border-radius: 7px;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.15s ease;
+}
+.cartel__arrows{
+  flex: 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.cartel__arrows svg{ width: 100%; height: 100%; }
+.cartel__arrow-shape{ fill: var(--cream-text); }
+
+.cartel__board{
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cartel__body{
+  position: relative;
+  flex: 1;
+  min-height: 78px;
+  padding: 12px 14px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cartel__name{
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
   color: var(--cream-text);
+  padding-right: 30%;
+}
+.cartel__islands{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 26%;
+  min-width: 40px;
+  max-width: 68px;
+  height: auto;
+  opacity: 0.9;
+}
+.cartel__islands polygon{ fill: var(--cream-text); }
+.cartel__range{
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--cream-text);
+}
+
+.street-card__caption{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding-left: 2px;
 }
 .street-card__tipo{
   display: inline-block;
@@ -566,6 +633,13 @@ section{ padding: 84px 0; }
   border: 1px solid rgba(176,141,66,0.4);
   padding: 3px 8px;
   border-radius: 999px;
+  white-space: nowrap;
+}
+.street-card__actual{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--cream-text-faint);
+  white-space: nowrap;
 }
 
 /* ---------- Detail panel ---------- */

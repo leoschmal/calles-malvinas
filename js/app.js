@@ -124,16 +124,40 @@
     mount.innerHTML = `<svg viewBox="${ISLANDS_VIEWBOX}" aria-hidden="true">${land}</svg>`;
   }
 
-  /* ---------------- Grillas de tarjetas ---------------- */
+  /* ---------------- Grillas de tarjetas (cartel vial) ---------------- */
+  let islandsIconCache = "";
+  function islandsIconMarkup() {
+    if (!islandsIconCache) {
+      islandsIconCache = ISLANDS_POLYGONS.map((pts) => `<polygon points="${pts}"></polygon>`).join("");
+    }
+    return islandsIconCache;
+  }
+
   function renderStreetGrid() {
     const mount = document.getElementById("streetGrid");
     if (!mount) return;
     mount.innerHTML = STREETS.map(
       (s) => `
-      <button class="street-card" data-numero="${s.numero}">
-        <span class="street-card__num">CALLE N.° ${s.numero}</span>
-        <div class="street-card__name">${s.propuesta}</div>
-        <span class="street-card__tipo">${s.tipo}</span>
+      <button class="street-card" data-numero="${s.numero}" aria-label="Calle N.° ${s.numero}, propuesta: ${s.propuesta}">
+        <span class="cartel">
+          <span class="cartel__arrows" aria-hidden="true">
+            <svg viewBox="0 0 130 204">
+              <polygon points="31,63 59,35 59,52 99,52 99,74 59,74 59,91" class="cartel__arrow-shape"></polygon>
+              <polygon points="99,140 71,112 71,129 31,129 31,151 71,151 71,168" class="cartel__arrow-shape"></polygon>
+            </svg>
+          </span>
+          <span class="cartel__board">
+            <span class="cartel__body">
+              <span class="cartel__name">${s.propuesta}</span>
+              <svg class="cartel__islands" viewBox="${ISLANDS_VIEWBOX}" aria-hidden="true">${islandsIconMarkup()}</svg>
+              <span class="cartel__range"><span>100</span><span>200</span></span>
+            </span>
+          </span>
+        </span>
+        <span class="street-card__caption">
+          <span class="street-card__tipo">${s.tipo}</span>
+          <span class="street-card__actual">actual calle ${s.numero}</span>
+        </span>
       </button>`
     ).join("");
     mount.querySelectorAll(".street-card").forEach((el) => {
