@@ -126,6 +126,49 @@ h1, h2, h3, h4{
   .topbar nav{ display: none; }
 }
 
+/* ---------- Announce bar (convocatoria a votar) ---------- */
+.announce-bar{
+  background: var(--wax-red);
+  color: var(--cream-text);
+  padding: 12px 0;
+}
+.announce-bar .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.announce-bar__label{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(244,239,226,0.8);
+  white-space: nowrap;
+}
+.announce-bar__text{
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.announce-bar__text strong{ color: #fff; }
+.announce-bar__link{
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cream-text);
+  border: 1px solid rgba(244,239,226,0.5);
+  border-radius: var(--radius-s);
+  padding: 5px 12px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.announce-bar__link:hover{ background: rgba(244,239,226,0.15); }
+
 /* ---------- Hero ---------- */
 .hero{
   position: relative;
@@ -826,6 +869,63 @@ section{ padding: 84px 0; }
 }
 .participar .section-head h2{ color: var(--cream-text); }
 .participar .section-head p{ color: var(--cream-text-soft); }
+.vote-alert{
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  background: rgba(176,141,66,0.1);
+  border: 1px solid var(--brass);
+  border-radius: var(--radius-m);
+  padding: 26px;
+  margin-bottom: 32px;
+}
+.vote-alert__date{
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(176,141,66,0.35);
+  padding-right: 26px;
+  min-width: 150px;
+  text-align: center;
+}
+.vote-alert__day{
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--brass);
+}
+.vote-alert__hour{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--cream-text-soft);
+  margin-top: 6px;
+}
+.vote-alert__body h3{
+  color: var(--cream-text);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.vote-alert__body p{ color: var(--cream-text-soft); font-size: 0.92rem; margin: 0; }
+.vote-alert__body p + p{ margin-top: 8px; }
+.vote-alert__body strong{ color: var(--cream-text); }
+.vote-alert__note{
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--cream-text-faint) !important;
+}
+@media (max-width: 620px){
+  .vote-alert{ flex-direction: column; align-items: stretch; }
+  .vote-alert__date{
+    border-right: none;
+    border-bottom: 1px solid rgba(176,141,66,0.35);
+    padding-right: 0; padding-bottom: 16px;
+  }
+}
+
 .steps{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

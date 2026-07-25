@@ -81,6 +81,14 @@ Pregunta del buscador de calles:
 Hoy tu calle solo tiene número. ¿Cuál es la tuya?
 
 ------------------------------------------------------------------------
+NO EDITAR: [GENERAL: announce-bar]
+------------------------------------------------------------------------
+Franja de aviso (arriba de todo el sitio, debajo del menú):
+Etiqueta: Convocatoria
+Texto: La votación entre vecinos que define la propuesta ganadora es el 1° de agosto, de 10:30 a 12:30 hs. Llevá tu DNI o un servicio a tu nombre que demuestre que vivís en el barrio.
+Botón: Más info ↓
+
+------------------------------------------------------------------------
 NO EDITAR: [GENERAL: participar]
 ------------------------------------------------------------------------
 Título de la sección:
@@ -88,6 +96,13 @@ Programa "Elegí el nombre" — Presupuesto Participativo
 
 Texto debajo del título:
 La propuesta se presenta ante la Municipalidad de Paraná dentro del programa de Presupuesto Participativo, dentro del marco de la Ordenanza N.° 9076.
+
+Bloque destacado — fecha de votación:
+Fecha: 1° de agosto
+Horario: 10:30 a 12:30 hs
+Título: Ese día se define qué propuesta gana
+Texto: Los vecinos votan en persona entre las propuestas presentadas para nombrar las calles del barrio. Llevá tu DNI o un servicio a tu nombre (luz, agua, gas, etc.) que demuestre que vivís en Altos del Paracao — es el requisito para poder votar.
+Nota: Lugar: a confirmar. Lo vamos a sumar acá apenas se sepa.
 
 Paso 1 — título: Una propuesta con fundamentos
 Paso 1 — texto:
