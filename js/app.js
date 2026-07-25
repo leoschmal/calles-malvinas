@@ -265,6 +265,41 @@
     });
   }
 
+  /* ---------------- Cuenta regresiva de la votación ---------------- */
+  function initVoteCountdown() {
+    const targets = document.querySelectorAll("[data-vote-countdown]");
+    if (!targets.length) return;
+
+    const VOTE_START = new Date("2026-08-01T10:30:00-03:00");
+    const VOTE_END = new Date("2026-08-01T12:30:00-03:00");
+
+    function render() {
+      const now = new Date();
+      let text;
+      if (now < VOTE_START) {
+        const diffMs = VOTE_START - now;
+        const days = Math.floor(diffMs / 86400000);
+        const hours = Math.floor((diffMs % 86400000) / 3600000);
+        const mins = Math.floor((diffMs % 3600000) / 60000);
+        if (days >= 1) {
+          text = `Faltan ${days} día${days === 1 ? "" : "s"}`;
+        } else if (hours >= 1) {
+          text = `Faltan ${hours} hora${hours === 1 ? "" : "s"}`;
+        } else {
+          text = `Faltan ${mins} minuto${mins === 1 ? "" : "s"}`;
+        }
+      } else if (now <= VOTE_END) {
+        text = "La votación está abierta ahora mismo";
+      } else {
+        text = "La votación ya finalizó";
+      }
+      targets.forEach((el) => { el.textContent = text; });
+    }
+
+    render();
+    setInterval(render, 60000);
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     renderPlanoBgIslands();
@@ -273,6 +308,7 @@
     renderStreetGrid();
     renderNumberChips();
     initTimelineToggle();
+    initVoteCountdown();
 
     document.getElementById("detailOverlay").addEventListener("click", closeDetail);
     document.addEventListener("keydown", (ev) => {

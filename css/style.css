@@ -153,6 +153,17 @@ h1, h2, h3, h4{
   line-height: 1.4;
 }
 .announce-bar__text strong{ color: #fff; }
+.announce-bar__countdown{
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0,0,0,0.18);
+  border-radius: var(--radius-s);
+  padding: 5px 10px;
+  white-space: nowrap;
+}
 .announce-bar__link{
   flex-shrink: 0;
   font-family: var(--font-mono);
@@ -902,6 +913,17 @@ section{ padding: 84px 0; }
   letter-spacing: 0.03em;
   color: var(--cream-text-soft);
   margin-top: 6px;
+}
+.vote-alert__countdown{
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wax-red-light);
+  border: 1px solid rgba(193,87,59,0.5);
+  border-radius: var(--radius-s);
+  padding: 4px 10px;
+  margin-top: 10px;
 }
 .vote-alert__body h3{
   color: var(--cream-text);
