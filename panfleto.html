@@ -124,20 +124,19 @@ body{
   font-size: 9px;
   line-height: 1.4;
   max-width: 108mm;
-  margin: 0 0 4px;
+  margin: 0;
 }
 .flyer__requisito b{ font-weight: 700; }
 
-.flyer__lugar{
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 8px;
-  color: #333;
-}
-.flyer__lugar-line{
-  display: inline-block;
-  min-width: 60mm;
-  border-bottom: 0.35mm solid #000;
-  margin-left: 3px;
+.flyer__tagline{
+  flex: 0 0 auto;
+  width: 16mm;
+  text-align: center;
+  border-right: 0.3mm solid #999;
+  padding-right: 6mm;
+  font-family: 'Malvinas Sans', cursive;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .flyer__aside{
@@ -148,7 +147,6 @@ body{
   align-items: center;
   text-align: center;
   gap: 3px;
-  border-left: 0.3mm solid #999;
   padding-left: 7mm;
 }
 .flyer__qr{ width: 26mm; height: 26mm; }
@@ -162,12 +160,6 @@ body{
   font-size: 6.8px;
   color: #333;
   word-break: break-all;
-}
-.flyer__tagline{
-  font-family: 'Malvinas Sans', cursive;
-  font-size: 12px;
-  line-height: 1.05;
-  margin-top: 4px;
 }
 
 @media print{
@@ -190,7 +182,6 @@ body{
     <li><b>Márgenes: Ninguno</b> (o "Sin márgenes")</li>
     <li><b>Escala: 100 %</b> — no uses "Ajustar a la página"</li>
     <li>Color: podés imprimir en blanco y negro / escala de grises sin problema, el diseño no depende del color</li>
-    <li>El campo "Lugar" queda en blanco para completarlo a mano una vez confirmada la sede de la votación</li>
   </ul>
 </div>
 
@@ -207,9 +198,9 @@ body{
 
   <div class="flyer">
     <div class="flyer__main">
-      <div class="flyer__eyebrow">Presupuesto Participativo · Ordenanza N.° 9076</div>
+      <div class="flyer__eyebrow">Ponele nombre a tu calle · Presupuesto Participativo · Ordenanza N.° 9076</div>
       <div class="flyer__coords">51°42′S · 57°51′O — Barrio Altos del Paracao</div>
-      <div class="flyer__title">Trece calles sin nombre. Trece lugares que son de todos los argentinos.</div>
+      <div class="flyer__title">Geografía de las Islas Malvinas</div>
       <div class="flyer__sub">Proponemos nombrar las calles del barrio con la toponimia oficial de las Islas Malvinas: bahías, puertos y montes reales. Conocé la propuesta completa y ayudanos a que gane.</div>
       <div class="flyer__cta">
         <div class="flyer__cta-label">Votá el</div>
@@ -217,22 +208,21 @@ body{
         <div class="flyer__cta-hour">10:30 a 12:30 hs</div>
       </div>
       <div class="flyer__requisito">Llevá tu <b>DNI</b> o un <b>servicio a tu nombre</b> que demuestre que vivís en el barrio.</div>
-      <div class="flyer__lugar">Lugar:<span class="flyer__lugar-line"></span></div>
     </div>
+    <div class="flyer__tagline">Las<br>Malvinas<br>son<br>argentinas</div>
     <div class="flyer__aside">
       <svg class="flyer__qr"><use href="#qrcode"/></svg>
       <div class="flyer__qr-caption">Escaneá y conocé tu calle</div>
       <div class="flyer__qr-url">leoschmal.github.io/calles-malvinas</div>
-      <div class="flyer__tagline">Las Malvinas<br>son argentinas</div>
     </div>
   </div>
 
   <div class="flyer">
     <div class="flyer__scissors">✂ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
     <div class="flyer__main">
-      <div class="flyer__eyebrow">Presupuesto Participativo · Ordenanza N.° 9076</div>
+      <div class="flyer__eyebrow">Ponele nombre a tu calle · Presupuesto Participativo · Ordenanza N.° 9076</div>
       <div class="flyer__coords">51°42′S · 57°51′O — Barrio Altos del Paracao</div>
-      <div class="flyer__title">Trece calles sin nombre. Trece lugares que son de todos los argentinos.</div>
+      <div class="flyer__title">Geografía de las Islas Malvinas</div>
       <div class="flyer__sub">Proponemos nombrar las calles del barrio con la toponimia oficial de las Islas Malvinas: bahías, puertos y montes reales. Conocé la propuesta completa y ayudanos a que gane.</div>
       <div class="flyer__cta">
         <div class="flyer__cta-label">Votá el</div>
@@ -240,22 +230,21 @@ body{
         <div class="flyer__cta-hour">10:30 a 12:30 hs</div>
       </div>
       <div class="flyer__requisito">Llevá tu <b>DNI</b> o un <b>servicio a tu nombre</b> que demuestre que vivís en el barrio.</div>
-      <div class="flyer__lugar">Lugar:<span class="flyer__lugar-line"></span></div>
     </div>
+    <div class="flyer__tagline">Las<br>Malvinas<br>son<br>argentinas</div>
     <div class="flyer__aside">
       <svg class="flyer__qr"><use href="#qrcode"/></svg>
       <div class="flyer__qr-caption">Escaneá y conocé tu calle</div>
       <div class="flyer__qr-url">leoschmal.github.io/calles-malvinas</div>
-      <div class="flyer__tagline">Las Malvinas<br>son argentinas</div>
     </div>
   </div>
 
   <div class="flyer">
     <div class="flyer__scissors">✂ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
     <div class="flyer__main">
-      <div class="flyer__eyebrow">Presupuesto Participativo · Ordenanza N.° 9076</div>
+      <div class="flyer__eyebrow">Ponele nombre a tu calle · Presupuesto Participativo · Ordenanza N.° 9076</div>
       <div class="flyer__coords">51°42′S · 57°51′O — Barrio Altos del Paracao</div>
-      <div class="flyer__title">Trece calles sin nombre. Trece lugares que son de todos los argentinos.</div>
+      <div class="flyer__title">Geografía de las Islas Malvinas</div>
       <div class="flyer__sub">Proponemos nombrar las calles del barrio con la toponimia oficial de las Islas Malvinas: bahías, puertos y montes reales. Conocé la propuesta completa y ayudanos a que gane.</div>
       <div class="flyer__cta">
         <div class="flyer__cta-label">Votá el</div>
@@ -263,13 +252,12 @@ body{
         <div class="flyer__cta-hour">10:30 a 12:30 hs</div>
       </div>
       <div class="flyer__requisito">Llevá tu <b>DNI</b> o un <b>servicio a tu nombre</b> que demuestre que vivís en el barrio.</div>
-      <div class="flyer__lugar">Lugar:<span class="flyer__lugar-line"></span></div>
     </div>
+    <div class="flyer__tagline">Las<br>Malvinas<br>son<br>argentinas</div>
     <div class="flyer__aside">
       <svg class="flyer__qr"><use href="#qrcode"/></svg>
       <div class="flyer__qr-caption">Escaneá y conocé tu calle</div>
       <div class="flyer__qr-url">leoschmal.github.io/calles-malvinas</div>
-      <div class="flyer__tagline">Las Malvinas<br>son argentinas</div>
     </div>
   </div>
 
