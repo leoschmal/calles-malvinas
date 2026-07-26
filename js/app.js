@@ -250,6 +250,33 @@
     document.body.style.overflow = "";
   }
 
+  /* ---------------- Modal de video ---------------- */
+  function openVideoModal() {
+    const overlay = document.getElementById("videoOverlay");
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("videoModalPlayer");
+    if (!overlay || !modal || !player) return;
+    overlay.classList.add("is-open");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    player.currentTime = 0;
+    player.play().catch(() => {});
+  }
+
+  function closeVideoModal() {
+    const overlay = document.getElementById("videoOverlay");
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("videoModalPlayer");
+    if (!overlay || !modal || !player) return;
+    overlay.classList.remove("is-open");
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    player.pause();
+    player.currentTime = 0;
+  }
+
   /* ---------------- Cronología desplegable ---------------- */
   function initTimelineToggle() {
     const toggle = document.getElementById("timelineToggle");
@@ -311,8 +338,16 @@
     initVoteCountdown();
 
     document.getElementById("detailOverlay").addEventListener("click", closeDetail);
+
+    document.getElementById("btnVerVideo").addEventListener("click", openVideoModal);
+    document.getElementById("videoOverlay").addEventListener("click", closeVideoModal);
+    document.getElementById("videoModalClose").addEventListener("click", closeVideoModal);
+
     document.addEventListener("keydown", (ev) => {
-      if (ev.key === "Escape") closeDetail();
+      if (ev.key === "Escape") {
+        closeDetail();
+        closeVideoModal();
+      }
     });
 
     document.body.classList.add("is-loaded");

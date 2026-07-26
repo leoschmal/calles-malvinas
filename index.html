@@ -83,12 +83,19 @@
   <div class="container">
     <div class="hero__coords">51°42′S · 57°51′O — PARANÁ, ENTRE RÍOS</div>
     <div class="cartouche">
-      <div class="eyebrow" style="color:var(--brass); margin-bottom:16px;">Programa Presupuesto Participativo · Ordenanza N.° 9076</div>
-      <h1>Trece calles sin nombre.<br>Trece lugares que son <em>de todos los argentinos.</em></h1>
-      <p class="hero__sub">Se propone nombrar las calles de Altos del Paracao con la toponimia oficial de las Islas Malvinas: bahías, puertos y montes reales, cada uno con su propia historia. Recorré el plano y descubrí qué lugar de las islas le toca a tu cuadra.</p>
-      <div class="hero__ctas">
-        <a href="#calles" class="btn btn--primary">Encontrá tu calle ↓</a>
-        <a href="#fundamentacion" class="btn btn--ghost">Por qué esta propuesta</a>
+      <video class="cartouche__bg-video" autoplay muted loop playsinline>
+        <source src="img/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="cartouche__scrim" aria-hidden="true"></div>
+      <div class="cartouche__content">
+        <div class="eyebrow" style="color:var(--brass); margin-bottom:16px;">Programa Presupuesto Participativo · Ordenanza N.° 9076</div>
+        <h1>Trece calles sin nombre.<br>Trece lugares que son <em>de todos los argentinos.</em></h1>
+        <p class="hero__sub">Se propone nombrar las calles de Altos del Paracao con la toponimia oficial de las Islas Malvinas: bahías, puertos y montes reales, cada uno con su propia historia. Recorré el plano y descubrí qué lugar de las islas le toca a tu cuadra.</p>
+        <div class="hero__ctas">
+          <a href="#calles" class="btn btn--primary">Encontrá tu calle ↓</a>
+          <a href="#fundamentacion" class="btn btn--ghost">Por qué esta propuesta</a>
+          <button type="button" class="btn btn--ghost" id="btnVerVideo">▶ Ver el video</button>
+        </div>
       </div>
     </div>
     <div class="hero__stats">
@@ -320,6 +327,14 @@
 <aside class="detail-panel" id="detailPanel" aria-live="polite">
   <div class="detail-panel__inner"></div>
 </aside>
+
+<div class="video-overlay" id="videoOverlay"></div>
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <button class="video-modal__close" id="videoModalClose" aria-label="Cerrar video">&times;</button>
+  <video id="videoModalPlayer" controls playsinline preload="none">
+    <source src="img/video-completo.mp4" type="video/mp4">
+  </video>
+</div>
 
 <footer>
   <div class="container">

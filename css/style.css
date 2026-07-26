@@ -214,15 +214,36 @@ h1, h2, h3, h4{
   position: relative;
   max-width: 780px;
   background: rgba(10,23,33,0.28);
+  overflow: hidden;
 }
 .cartouche::before, .cartouche::after{
   content: "";
   position: absolute;
   width: 14px; height: 14px;
   border: 1px solid var(--brass);
+  z-index: 2;
 }
 .cartouche::before{ top: -1px; left: -1px; border-right: none; border-bottom: none; }
 .cartouche::after{ bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+.cartouche__bg-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.cartouche__scrim{
+  position: absolute;
+  inset: 0;
+  background: rgba(10,23,33,0.6);
+  z-index: 1;
+}
+.cartouche__content{
+  position: relative;
+  z-index: 2;
+}
 
 .hero h1{
   font-size: clamp(2.3rem, 5.6vw, 4rem);
@@ -254,6 +275,7 @@ h1, h2, h3, h4{
   display: inline-flex; align-items: center; gap: 10px;
   cursor: pointer;
   border: 1px solid transparent;
+  background: transparent;
   transition: transform 0.15s ease, background 0.15s ease, border-color .15s ease;
 }
 .btn:hover{ transform: translateY(-1px); }
@@ -737,6 +759,49 @@ section{ padding: 84px 0; }
   cursor: pointer;
   color: var(--ink-text);
 }
+/* ---- Modal de video completo ---- */
+.video-overlay{
+  position: fixed; inset: 0;
+  background: rgba(6,10,15,0.9);
+  z-index: 200;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.video-overlay.is-open{ opacity: 1; pointer-events: auto; }
+
+.video-modal{
+  position: fixed; inset: 0;
+  z-index: 201;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.video-modal.is-open{ opacity: 1; pointer-events: auto; }
+.video-modal video{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.video-modal__close{
+  position: fixed;
+  top: 18px; right: 22px;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(245,240,230,0.4);
+  background: rgba(10,17,23,0.6);
+  color: var(--cream-text);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .detail-panel__eyebrow{ color: var(--wax-red); margin-bottom: 10px; clear: both; }
 .detail-panel__title{
   font-size: clamp(1.6rem, 4vw, 2.1rem);
