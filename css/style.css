@@ -1167,3 +1167,30 @@ body.is-loaded .cartouche{
   position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap;
 }
+
+/* ---------- Botón flotante de WhatsApp ---------- */
+.whatsapp-fab{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 150;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 13px 18px 13px 13px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.whatsapp-fab:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.4); color: #fff; }
+.whatsapp-fab__icon{ width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
+@media (max-width: 480px){
+  .whatsapp-fab{ padding: 13px; }
+  .whatsapp-fab__label{ display: none; }
+}
