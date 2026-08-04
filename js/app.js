@@ -5,6 +5,15 @@
 (function () {
   "use strict";
 
+  /* ---------------- Datos de la votación (fuente única) ---------------- */
+  const VOTE_INFO = {
+    start: new Date("2026-08-08T11:00:00-03:00"),
+    end: new Date("2026-08-08T13:00:00-03:00"),
+    title: "Votación: nombres de las calles — Barrio Altos del Paracao",
+    location: "Plaza sobre calle Telémaco Susini, entre calle 1853 y calle 1751, Barrio Altos del Paracao, Paraná, Entre Ríos",
+    details: "Votación entre vecinos para elegir la propuesta que nombra las calles del barrio (Presupuesto Participativo, Ordenanza N.° 9076). Llevá tu DNI o un servicio a tu nombre que demuestre que vivís en el barrio.",
+  };
+
   /* ---------------- Mini-mapa real de las islas ---------------- */
   // Contorno real (ver islands-map-data.js). Rótulos y puntos son nuestros,
   // agregados sobre esa base.
@@ -297,8 +306,8 @@
     const targets = document.querySelectorAll("[data-vote-countdown]");
     if (!targets.length) return;
 
-    const VOTE_START = new Date("2026-08-01T10:30:00-03:00");
-    const VOTE_END = new Date("2026-08-01T12:30:00-03:00");
+    const VOTE_START = VOTE_INFO.start;
+    const VOTE_END = VOTE_INFO.end;
 
     function render() {
       const now = new Date();
@@ -327,6 +336,61 @@
     setInterval(render, 60000);
   }
 
+  /* ---------------- Recordatorio de la votación (calendario) ---------------- */
+  function toIcsUtc(date) {
+    return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+  }
+
+  function initVoteCalendarLinks() {
+    const gcalLink = document.getElementById("btnAddGCal");
+    const icsBtn = document.getElementById("btnDownloadIcs");
+    if (!gcalLink && !icsBtn) return;
+
+    const startUtc = toIcsUtc(VOTE_INFO.start);
+    const endUtc = toIcsUtc(VOTE_INFO.end);
+
+    if (gcalLink) {
+      const params = new URLSearchParams({
+        action: "TEMPLATE",
+        text: VOTE_INFO.title,
+        dates: `${startUtc}/${endUtc}`,
+        details: VOTE_INFO.details,
+        location: VOTE_INFO.location,
+      });
+      gcalLink.href = `https://calendar.google.com/calendar/render?${params.toString()}`;
+    }
+
+    if (icsBtn) {
+      icsBtn.addEventListener("click", () => {
+        const ics = [
+          "BEGIN:VCALENDAR",
+          "VERSION:2.0",
+          "PRODID:-//Calles Malvinas//Votacion//ES",
+          "BEGIN:VEVENT",
+          `UID:votacion-calles-malvinas-${startUtc}@calles-malvinas`,
+          `DTSTAMP:${toIcsUtc(new Date())}`,
+          `DTSTART:${startUtc}`,
+          `DTEND:${endUtc}`,
+          `SUMMARY:${VOTE_INFO.title}`,
+          `DESCRIPTION:${VOTE_INFO.details}`,
+          `LOCATION:${VOTE_INFO.location}`,
+          "END:VEVENT",
+          "END:VCALENDAR",
+        ].join("\r\n");
+
+        const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "votacion-calles-malvinas.ics";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      });
+    }
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     renderPlanoBgIslands();
@@ -336,6 +400,7 @@
     renderNumberChips();
     initTimelineToggle();
     initVoteCountdown();
+    initVoteCalendarLinks();
 
     document.getElementById("detailOverlay").addEventListener("click", closeDetail);
 
